@@ -78,12 +78,12 @@ def run():
         ticker = input(" Please enter a ticker: ")
         tickers.append(ticker)
         tickers_added +=1
-    print('Updating old files!')
+    print('Updating old files! This could take a bit.')
     update_files()
     new_filename = date_file_builder()
-    print('Building new file')
+    print('Building new file from tickers entered!')
     create_new_file(new_filename, tickers)
-    print('Done!')
+    print('Done updating and creating all files!')
 
 
 if __name__ == '__main__':
